@@ -1,0 +1,104 @@
+     /* horizontal-swiper  and second swiper*/
+     .single-product ,.second-swiper-wrapper{
+        position: relative !important;
+        top: 0px;
+    }
+
+    .swiper-button-next-h,
+    .swiper-button-prev-h,.swiper-button-next-s,.swiper-button-prev-s {
+        position: absolute;
+        top: 49px;
+    }
+
+    .swiper-button-prev-h,.swiper-button-prev-s {
+        right: 50px !important;
+        left: auto;
+    }
+
+    .swiper-button-next-h::after,
+    .swiper-button-prev-h::after,.swiper-button-next-s::after,.swiper-button-prev-s::after{
+        font-size: 13px;
+    }
+    /* second-swiper */
+    .swiper-slide-s{
+        height: auto;
+        width: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .second-swiper-wrapper{
+        height: 508px !important;
+    }
+   
+ 
+
+    .swiper-individual-parent-wrapper {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .swiper-image-container {
+        width: 363px !important;
+        height: 408px !important;
+        /* position: absolute;
+        top: 0px;
+        left: 100px; */
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .swiper-thumb-container {
+        width: 60px;
+        height: 408px;
+        /* position: absolute;
+        padding: 0px 0px;
+        left: 10px; */
+        padding: 0;
+        margin: 0;
+    }
+
+    .swiper-slide-hot-deals {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .swiper-thumb-container .swiper-slide-hot-deals  {
+        width: 100%;
+        height: 100%;
+        /* opacity: 0.4; */
+
+    }
+
+    .swiper-thumb-container__thumbnails img {
+        height: 70px;
+        width: 100%;
+    }
+
+    .swiper-thumb-container .swiper-slide-thumb-active>img {
+        opacity: 1;
+        outline: 1px solid blue;
+        outline-offset: -1px;
+    }
+
+    .swiper-image-container__images img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-button-next-single-product::after,
+    .swiper-button-prev-single-product::after {
+        font-size: 13px;
+    }
+
+    /* product-details */
+    .product-title {
+        color: #333;
+    }

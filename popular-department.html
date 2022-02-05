@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>Popular Department</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .product {
+            position: relative;
+            font-family: Poppins, sans-serif;
+            font-size: 1px;
+            color: #020101;
+            -webkit-transition: opacity 0.3s, -webkit-box-shadow 0.3s;
+            transition: opacity 0.3s, -webkit-box-shadow 0.3s;
+            transition: box-shadow 0.3s, opacity 0.3s;
+            transition: box-shadow 0.3s, opacity 0.3s, -webkit-box-shadow 0.3s;
+        }
+
+        .product .product-price {
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .product-media {
+            position: relative;
+            margin-bottom: 0;
+            -webkit-transition: -webkit-box-shadow 0.35s;
+            transition: -webkit-box-shadow 0.35s;
+            transition: box-shadow 0.35s;
+            transition: box-shadow 0.35s, -webkit-box-shadow 0.35s;
+        }
+
+        .product-media img {
+            display: block;
+            width: 100%;
+            height: auto;
+            -webkit-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+        }
+
+        .product-media img:last-child {
+            position: absolute;
+            opacity: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .product-media img:first-child {
+            position: relative;
+            opacity: 1;
+        }
+
+        .product-media:hover img:last-child {
+            opacity: 1;
+
+        }
+
+        .product-media:hover img:first-child {
+            opacity: 0;
+        }
+
+        .product:hover {
+            box-shadow: 0px 0px 2px black;
+        }
+
+        .ratings-container {
+            font-size: 14px;
+        }
+
+        .product-price .new-price {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .product-widget .product-name {
+            color: #666;
+        }
+        .product-details h4{
+            font-size: 13px;
+            margin: 0;
+        }
+        .product-details a{
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        } 
+    </style>
+
+</head>
+<div class="container-fluid border border-danger">
+    <div class="row g-0 justify-content-lg-between justify-content-center" id="parent">
+
+        <div class="product-item-wrap border border-primary col-lg-2 col-md-3 col-sm-4  col-4 mb-2 mx-2 ">
+            <div class="text-center product ">
+                <figure class="product-media">
+                    <a href="product-default.html">
+                        <img src="https://portotheme.com/html/wolmart/assets/images/demos/demo1/products/3-1-1.jpg"
+                            alt="Product" width="300" height="338" />
+                        <img src="https://portotheme.com/html/wolmart/assets/images/demos/demo1/products/3-1-2.jpg"
+                            alt="Product" width="300" height="338" />
+                    </a>
+                    <!-- <div class="product-action-vertical">
+                        <a href="#" class="btn-product-icon btn-cart w-icon-cart" title="Add to cart"></a>
+                        <a href="#" class="btn-product-icon btn-wishlist w-icon-heart" title="Add to wishlist"></a>
+                        <a href="#" class="btn-product-icon btn-quickview w-icon-search" title="Quickview"></a>
+                        <a href="#" class="btn-product-icon btn-compare w-icon-compare" title="Add to Compare"></a>
+                    </div> -->
+                </figure>
+                <div class="product-details mt-2">
+                    <h4 class="product-name"><a href="product-default.html">Classic Hat</a></h4>
+                    <div class="ratings-container">
+                        <div class="ratings-full">
+                            <span class="ratings" style="width: 60%;"></span>
+                            <span class="tooltiptext tooltip-top"></span>
+                        </div>
+                        <a href="product-default.html" class="rating-reviews">(1 Reviews)</a>
+                    </div>
+                    <div class="product-price">
+                        <ins class="new-price fs-6">$53.00</ins>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        for (let index = 0; index < 10; index++) {
+
+
+        }
+    })
+</script>
+
+<body>
+</body>

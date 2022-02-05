@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="home.css">
+
+    <title>Wolmart-Home</title>
+</head>
+
+<body>
+    <div class="container-fluid g-0">
+        <div class="header-wrapper">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-left  col-7">
+                            <p class="welcome-msg">welcome to Wolmart</p>
+                        </div>
+                        <div class="header-right col">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="dropdown">
+                                    <button class="btn btn-light dropdown-toggle" type="button" id="currencydropdown"
+                                        data-bs-toggle="dropdown">
+                                        currency
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">USD</a></li>
+                                        <li><a class="dropdown-item" href="#">EURO</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown ">
+                                    <button class="btn btn-light dropdown-toggle" type="button" id="currencydropdown"
+                                        data-bs-toggle="dropdown">
+                                        language
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">ENG</a></li>
+                                        <li><a class="dropdown-item" href="#">FRENCH</a></li>
+                                    </ul>
+                                </div>
+                                <span class="header-right__divider"></span>
+                                <a href="#">Blog</a>
+                                <a href="#">Contact Us</a>
+                                <a href="#">My Account</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Sign in</a>
+                                <span class="header-right__divider"></span>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-left col-8">
+                            <div class="d-flex align-items-center">
+                                <div class="logo pe-4">
+                                    <a href="/home.html">
+                                        <img src="https://portotheme.com/html/wolmart/assets/images/logo.png" alt="logo"
+                                            width="144" height="45">
+                                    </a>
+                                </div>
+                                <div class="form">
+                                    <form method="get" action="#" class="header-search">
+                                        <div class="select-box m-auto">
+                                            <select id="category" name="category" class="form-select">
+                                                <option selected>All Categories</option>
+                                                <option value="4">Fashion</option>
+                                                <option value="5">Furniture</option>
+                                                <option value="6">Shoes</option>
+                                                <option value="7">Sports</option>
+                                                <option value="8">Games</option>
+                                                <option value="9">Computers</option>
+                                                <option value="10">Electronics</option>
+                                                <option value="11">Kitchen</option>
+                                                <option value="12">Clothing</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" class="form-control" name="search" id="search-bar"
+                                            placeholder="Search in..." required />
+                                        <button class="btn btn-search" type="submit"><i class="fas fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="header-right col">
+                            <div class="d-flex flex-row justify-content-around align-items-center">
+                                <div class="live-chat">
+                                    <small>Live Chat or:</small>
+                                    <h5>9862010014</h5>
+                                </div>
+                                <div class="header-right__divider  "></div>
+
+                                <div class="wishlist d-flex flex-column justify-content-center align-items-center">
+                                    <i class="far fa-heart header-middle__icon"></i>
+                                    <span class="text-center">Wishlist</span>
+                                </div>
+                                <div class="compare d-flex flex-column justify-content-center align-items-center">
+                                    <i class="fas fa-balance-scale header-middle__icon"></i>
+                                    <span class="text-center">Compare</span>
+                                </div>
+                                <div class="cart d-flex flex-column justify-content-center align-items-center">
+                                    <i class="fas fa-shopping-cart header-middle__icon"></i>
+                                    <span class="text-center">Cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of header-middle -->
+            <div class="header-end ">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-left col-8">
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown">
+                                    <a class="btn btn-light dropdown-toggle" type="button" id="Browsebtn"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-bars"></i>
+                                        <span> Browse Categories</span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="Browsebtn">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+
+                                <nav class="navbar navbar-light">
+
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">shop</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">vendor</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Elements
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="header-right col ">
+                            <div class=" d-flex justify-content-end align-items-center h-100">
+
+                                <a class="track-order m-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Track Order</span>
+                                </a>
+
+                                <a class="daily-deals m-3">
+                                    <i class="fas fa-tags"></i>
+                                    <span>Daily Deals</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end fo header-wrapper -->
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="https://portotheme.com/html/wolmart/assets/images/demos/demo1/sliders/shoes.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://portotheme.com/html/wolmart/assets/images/demos/demo1/sliders/men.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://portotheme.com/html/wolmart/assets/images/demos/demo1/sliders/skate.png" alt="">
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+        </div>
+        <!-- end of swiper -->
+
+        <div class="container  p-2 shipping-payment-wrapper mt-4">
+        
+            <div class="d-flex flex-row align-items-center justify-content-between " style="width: 100%;">
+                <div class="shipping-payment__items d-flex flex-row justify-content-around align-items-center">
+                    <i class="fas fa-truck"></i>
+                    <div class="shipping-payment__items-text">
+                        <h4>Free Shipping & Returns</h4>
+                        <p>For all orders over $99</p>
+                    </div>
+                </div>
+                <div class="shipping-payment__items  d-flex flex-row justify-content-around align-items-center">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="shipping-payment__items-text">
+                        <h4>Secure Payment</h4>
+                        <p>We ensure secure payment</p>
+                    </div>
+                </div>
+                <div class="shipping-payment__items  d-flex flex-row justify-content-around align-items-center">
+                    <i class="fas fa-credit-card"></i>
+                    <div class="shipping-payment__items-text">
+                        <h4>Money Back Guarantee</h4>
+                        <p>Any back within 30 days</p>
+                    </div>
+                </div>
+                <div class="shipping-payment__items d-flex flex-row justify-content-around align-items-center">
+                    <i class="fas fa-comment-dots"></i>
+                    <div class="shipping-payment__items-text">
+                        <h4>Customer Support</h4>
+                        <p>Call or email us 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of payment shipping section -->
+        <div class="container mt-2 ">
+            <div class="row " id="advertisement-section">
+                <div class="col p-1">
+                    <div class="advertisement-section__content-1 p-3 border rounded">
+                        <h5>Get up to 20% off</h5>
+                        <h3 class="fw-bolder ">Sports Outfits</h3>
+                        <h3>Collection</h3>
+                        <small >Starting at $170.0</small>
+                    </div>
+                </div>
+                <div class="col p-1">
+                    <div class="advertisement-section__content-2 p-3 border rounded">
+                        <h5>Get up to 20% off</h5>
+                        <h3 class="fw-bolder ">Sports Outfits</h3>
+                        <h3>Collection</h3>
+                        <small >Starting at $170.0</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of advertisement-section -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  
+</body>
+
+</html>
